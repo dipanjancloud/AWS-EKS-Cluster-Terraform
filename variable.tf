@@ -24,7 +24,9 @@ variable "instance_size" {
 }
 
 # Region
-variable "region" {}
+variable "region" {
+    type    = string
+}
 
 # SSH Access
 variable "ssh_access" {
@@ -52,6 +54,7 @@ variable "type" {
 
 # Key 
 variable "key_name" {
+    type    = string
     default = "Demo-key"
 }
 
